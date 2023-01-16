@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css//simple-adaptive-slider.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/mainInfo.css" />
+    <link rel="stylesheet" href="./css/qualification.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/simple-adaptive-slider.js"></script>
+    <title>Resume</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <button aria-label="Раскрыть меню" class="header__burgerBtn">
+          <svg
+            class="container__header__burger"
+            width="30"
+            height="23"
+            viewBox="0 0 30 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="3" fill="#333333" />
+            <rect y="10" width="30" height="3" fill="#333333" />
+            <rect y="20" width="30" height="3" fill="#333333" />
+          </svg>
+        </button>
+        <nav class="header__nav nav">
+          <button aria-label="Закрыть меню" class="nav__close">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2.09094"
+                width="29.5699"
+                height="2.95699"
+                transform="rotate(45 2.09094 0)"
+                fill="#333333"
+              />
+              <rect
+                y="20.9092"
+                width="29.5699"
+                height="2.95699"
+                transform="rotate(-45 0 20.9092)"
+                fill="#333333"
+              />
+            </svg>
+          </button>
+          <ul class="header__menu menu">
+            <a href="#aboutMe" class="menu__item">Обо мне</a>
+            <a href="#education" class="menu__item">Образование</a>
+            <a href="#skills" class="menu__item">Навыки</a>
+            <a href="#experience" class="menu__item">Опыт работы</a>
+            <a href="#portfolio" class="menu__item">Портфолио</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="aboutMe" class="main-info">
+        <div class="main-info__container container">
+          <div class="main-info__personal">
+            <img class="main-info__image" src="./img/profile-img.jpeg" alt="" />
+            <h2 class="main-info__name">Шевцова Александра Рашидовна</h2>
+            <span>Frontend developer</span>
+          </div>
+          <div class="main-info__about-me">
+            <h3 class="main-info__header">Обо мне</h3>
+            <p class="main-info__description">
+              Я - frontend-разработчик. Имею опыт во frontend-разработке более
+              двух лет, из которых 10 месяцев - коммерческий опыт. Ищу дружную
+              команду профессионалов, которой буду полезна.
+            </p>
+            <hr class="main-info__separator" />
+            <ul class="main-info__details details">
+              <li class="details__item">
+                <span>Дата рождения:</span><span>21.10.1999</span>
+              </li>
+              <li class="details__item">
+                <span>Возраст:</span><span>23</span>
+              </li>
+              <li class="details__item">
+                <span>Гражданство:</span><span>РФ</span>
+              </li>
+              <li class="details__item">
+                <span>Место проживания:</span><span>Россия, Новосибирск</span>
+              </li>
+              <li class="details__item">
+                <span>Номер телефона:</span><span>+79137181787</span>
+              </li>
+              <li class="details__item">
+                <span>Email:</span><span>alexandra_she@mail.ru</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification">
+        <div class="qualification__container container">
+          <div id="skills" class="qualification__skills">
+            <h3 class="qualification__header qualification__header_skills">
+              Навыки
+            </h3>
+            <ul class="qualification__list">
+              <li class="qualification__item">Html</li>
+              <li class="qualification__item">Css</li>
+              <li class="qualification__item">Scss</li>
+              <li class="qualification__item">Javascript</li>
+              <li class="qualification__item">React</li>
+              <li class="qualification__item">Typescript</li>
+              <li class="qualification__item">Семантичность</li>
+              <li class="qualification__item">Доступность</li>
+              <li class="qualification__item">Адаптивная верстка</li>
+              <li class="qualification__item">Flex/Grid верстка</li>
+              <li class="qualification__item">Pixel perfect</li>
+            </ul>
+          </div>
+          <div id="experience" class="qualification__experience experience">
+            <h3 class="qualification__header qualification__header_experience">
+              Опыт работы
+            </h3>
+
+            <h4 class="qualification__second-header">
+              ATLR storefront | junior frontend developer
+            </h4>
+            <span class="date">Февраль 2022 — декабрь 2022</span>
+            <p class="experience__description">
+              Компания занимается разработкой конструктора для сайтов
+              интернет-магазинов. В мои обязанности входило создание новых
+              блоков, верстка статичных страниц, доработка существующего
+              интерфейса. Стек: preact, vue, typescript
+            </p>
+
+            <h4 class="qualification__second-header">
+              Прохождение курсов, самообучение
+            </h4>
+            <span class="date">Декабрь 2020 — февраль 2022</span>
+            <p class="experience__description">
+              В течении данного времени активно изучала html, css, js, react.
+              Прошла платный курс по базовой и продвинутой верстке, для освоения
+              JavaScript и React искала материалы на бесплатных ресурсах —
+              плейлисты на YouTube, онлайн-учебники, статьи, читала
+              документацию.
+            </p>
+          </div>
+          <div id="education" class="qualification__education education">
+            <h3 class="qualification__header qualification__header_education">
+              Образование
+            </h3>
+            <h4 class="qualification__second-header">
+              Новосибирский государственный технический университет(бакалавр)
+            </h4>
+            <span class="date">2017-2021</span>
+            <div class="experience__description">
+              Факультет прикладной математики и информатики
+            </div>
+          </div>
+          <div class="qualification__personal-qualities">
+            <h3 class="qualification__header qualification__header_qualities">
+              Личные качества
+            </h3>
+            <ul>
+              <li class="qualification__item">Быстрая обучаемость</li>
+              <li class="qualification__item">
+                Положительно отношусь к конструктивной критике
+              </li>
+              <li class="qualification__item">Целеустремленность</li>
+              <li class="qualification__item">Английский язык</li>
+              <li class="qualification__item">Коммуникабельность</li>
+              <li class="qualification__item">
+                Умею взаимодействовать в группе с другими специалистами
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio__container container">
+          <h3 class="qualification__header qualification__header_centered">
+            Портфолио
+          </h3>
+          <div class="itcss">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    class="portfolio__image"
+                    src="./img/resume1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    class="portfolio__image"
+                    src="./img/resume2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    class="portfolio__image"
+                    src="./img/resume3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="portfolio__header">Мои работы</h4>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a
+                class="portfolio__link"
+                target="_blank"
+                href="https://shevrolex.github.io/CoffeeShop/"
+                >Coffee shop</a
+              >
+              <span class="portfolio__description"
+                >- Страничка для магазина кофе. Работа выполнена с
+                использованием scss и js-анимации.</span
+              >
+            </li>
+            <li class="portfolio__item">
+              <a
+                class="portfolio__link"
+                target="_blank"
+                href="https://shevrolex.github.io/Evklid/"
+                >Evklid</a
+              >
+              <span class="portfolio__description"
+                >- Работа выполнена в ходе обучения. Использованы слайдер,
+                "аккордион", "табы".</span
+              >
+            </li>
+            <li class="portfolio__item">
+              <a
+                class="portfolio__link"
+                target="_blank"
+                href="https://shevrolex.github.io/Grid/"
+                >Grid</a
+              >
+              <span class="portfolio__description"
+                >- Работа выполнена в ходе обучения. Использована библиотека
+                bootstrap.</span
+              >
+            </li>
+          </ul>
+          <div>
+            Так же мои работы можно увидеть на моем
+            <a
+              class="portfolio__link"
+              target="_blank"
+              href="https://github.com/Shevrolex"
+              >гитхабе.</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

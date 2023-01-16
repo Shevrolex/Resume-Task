@@ -1,0 +1,153 @@
+:root {
+  --gray-color: rgba(172, 191, 189, 0.5);
+  --gray-green-color: rgba(172, 191, 189, 0.9);
+  --dark-blue-color: rgba(34, 60, 80, 0.2);
+}
+
+.main-info {
+  background-color: var(--gray-color);
+}
+
+.main-info__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qualification__header_centered {
+  position: relative;
+  animation: showLeft 1s;
+  z-index: 1;
+}
+
+.main-info__personal {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-green-color);
+  box-shadow: 0px 0px 21px 5px var(--dark-blue-color);
+  position: relative;
+  animation: showLeft 1s;
+  z-index: 1;
+}
+
+.main-info__about-me {
+  width: 50%;
+  position: relative;
+  animation: showRight 1s;
+  z-index: 1;
+}
+
+@keyframes showLeft {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.main-info__image {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.main-info__name {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-info__header {
+  margin-bottom: 20px;
+}
+
+.main-info__description {
+  margin-bottom: 30px;
+  line-height: 1.4em;
+}
+
+.main-info__separator {
+  margin-bottom: 30px;
+}
+
+.details__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1023px) {
+  .main-info__container {
+    flex-direction: column;
+  }
+
+  .main-info__personal {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .main-info__about-me {
+    width: 100%;
+  }
+
+  .main-info__header {
+    display: none;
+  }
+
+  .main-info__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-info__personal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-info__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main-info__personal {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main-info__name {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .main-info__description {
+    font-size: 14px;
+  }
+
+  .details__item {
+    font-size: 12px;
+  }
+}

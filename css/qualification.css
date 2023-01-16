@@ -1,0 +1,117 @@
+:root {
+  --main-bg-color: rgb(239, 239, 241);
+  --dark-blue-color: rgba(29, 31, 46, 0.4);
+}
+
+.qualification {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--main-bg-color);
+}
+
+.qualification__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+}
+
+.qualification__header {
+  padding-left: 40px;
+  font-size: 24px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid var(--dark-blue-color);
+  margin-bottom: 40px;
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+}
+
+.qualification__header_skills {
+  background-image: url("/img/skills.svg");
+}
+
+.qualification__header_experience {
+  background-image: url("/img/experience.svg");
+}
+
+.qualification__header_education {
+  background-image: url("/img/education.svg");
+}
+
+.qualification__header_qualities {
+  background-image: url("/img/personalSkills.svg");
+}
+
+.qualification__item {
+  padding-left: 40px;
+  background-image: url("/img/checked.svg");
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+}
+
+.qualification__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.qualification__second-header {
+  padding-left: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-image: url("/img/experienceHeader.svg");
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.date {
+  padding-left: 40px;
+  display: inline-block;
+
+  margin-bottom: 20px;
+}
+
+.experience__description {
+  padding-left: 40px;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .qualification__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .qualification {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .qualification__container {
+    grid-row-gap: 50px;
+  }
+
+  .qualification__header {
+    font-size: 20px;
+    background-size: 20px;
+    padding-left: 30px;
+  }
+
+  .qualification__item {
+    padding-left: 30px;
+    font-size: 14px;
+    background-position: 0 50%;
+  }
+
+  .qualification__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .experience__description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
