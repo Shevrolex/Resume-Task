@@ -28,24 +28,24 @@
 }
 
 .qualification__header_skills {
-  background-image: url("/img/skills.svg");
+  background-image: url("../img/skills.svg");
 }
 
 .qualification__header_experience {
-  background-image: url("/img/experience.svg");
+  background-image: url("../img/experience.svg");
 }
 
 .qualification__header_education {
-  background-image: url("/img/education.svg");
+  background-image: url("../img/education.svg");
 }
 
 .qualification__header_qualities {
-  background-image: url("/img/personalSkills.svg");
+  background-image: url("../img/personalSkills.svg");
 }
 
 .qualification__item {
   padding-left: 40px;
-  background-image: url("/img/checked.svg");
+  background-image: url("../img/checked.svg");
   background-size: 17px;
   background-repeat: no-repeat;
   background-position: 3% 50%;
@@ -59,7 +59,7 @@
   padding-left: 40px;
   font-size: 18px;
   margin-bottom: 10px;
-  background-image: url("/img/experienceHeader.svg");
+  background-image: url("../img/experienceHeader.svg");
   background-size: 28px;
   background-repeat: no-repeat;
   background-position: 0 50%;
